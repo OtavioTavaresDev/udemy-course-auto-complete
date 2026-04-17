@@ -4,6 +4,14 @@ Script para marcar automaticamente todas as aulas de um curso da Udemy como conc
 
 > ⚠️ **Use com responsabilidade**: Este script é útil para cursos que você já assistiu ou quando a Udemy não registra corretamente seu progresso.
 
+## 📖 Por que criei este script?
+
+Em 2024, completei alguns cursos na Udemy e, após finalizar todas as aulas, segui com outros projetos. Meses depois, ao acessar novamente a plataforma, percebi que **nenhum dos cursos estava marcado como concluído** e várias aulas individuais também não haviam sido registradas como assistidas.
+
+Como já havia dedicado horas ao conteúdo e não queria refazer todo o processo manualmente (clicar em centenas de checkboxes, uma por uma), desenvolvi este script para automatizar a marcação do que eu já havia estudado legitimamente.
+
+Se você está na mesma situação — seja por um bug da Udemy, por ter assistido aulas offline, ou por ter migrado de conta — este script vai te poupar **horas de cliques repetitivos**.
+
 ## 🎯 Funcionalidades
 
 - ✅ Expande automaticamente todas as seções do curso
@@ -50,6 +58,12 @@ Crie um favorito com o código para executar com um clique.
 **Causa**: Muitas requisições em pouco tempo.
 
 **Solução**: Use a `safe-version.js` com intervalo de 1000ms.
+
+### ❌ Erros vermelhos no console (`ERR_BLOCKED_BY_CLIENT`)
+
+**Causa**: Seu AdBlock está bloqueando a telemetria da Udemy.
+
+**Impacto**: **Nenhum** no funcionamento do script. Ignore esses erros.
 
 ## 🤝 Contribuindo
 
