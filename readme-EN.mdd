@@ -1,0 +1,84 @@
+# Udemy Course Auto-Complete 🚀
+
+Script to automatically mark all lessons of a Udemy course as completed.
+
+> ⚠️ **Use responsibly**: This script is useful for courses you have already watched or when Udemy fails to properly record your progress.
+
+## 📖 Why I created this script
+
+Back in 2024, I completed a few courses on Udemy and, after finishing all the lessons, moved on to other projects. Months later, when I logged back into the platform, I realized that **none of the courses were marked as completed** and several individual lessons hadn't been registered as watched either.
+
+Since I had already dedicated hours to the content and didn't want to redo the entire process manually (clicking hundreds of checkboxes one by one), I developed this script to automate marking what I had already legitimately studied.
+
+If you're in the same situation — whether due to a Udemy bug, watching lessons offline, or migrating accounts — this script will save you **hours of repetitive clicking**.
+
+## 🎯 Features
+
+- ✅ Automatically expands all course sections
+- ✅ Marks all pending lessons as completed
+- ✅ Two versions available:
+  - **Fast**: Marks all items in seconds (may cause logout)
+  - **Safe**: 1-second interval between clicks (recommended)
+
+## 📥 How to Use
+
+### Method 1: Browser Console (Recommended)
+
+1. Go to your course page on Udemy
+2. Scroll to the bottom of the page (to load all content)
+3. Open the Developer Console:
+   - **Windows/Linux**: `Ctrl + Shift + J` or `F12`
+   - **Mac**: `Cmd + Option + J`
+4. Paste the code from your chosen version and press `Enter`
+
+### Method 2: Bookmarklet (Coming soon)
+
+Create a bookmark with the code to run it with a single click.
+
+## 📊 Version Comparison
+
+| Version | Interval | Speed | Logout Risk | When to Use |
+|---------|----------|-------|-------------|-------------|
+| **fast-version.js** | 150ms | ~15 items/sec | High | Small courses (< 30 lessons) |
+| **safe-version.js** | 1000ms | 1 item/sec | Low | Large courses or if you've been logged out before |
+
+## 🔧 Troubleshooting
+
+### ❌ "Found 0 items to mark"
+
+**Cause**: Sections not expanded or content not loaded.
+
+**Solution**: 
+1. Manually scroll to the bottom of the page
+2. Click to manually expand all sections
+3. Run the script again
+
+### ❌ I was logged out during execution
+
+**Cause**: Too many requests in a short time.
+
+**Solution**: Use `safe-version.js` with the 1000ms interval.
+
+### ❌ Red errors in the console (`ERR_BLOCKED_BY_CLIENT`)
+
+**Cause**: Your AdBlock is blocking Udemy's telemetry.
+
+**Impact**: **None** on the script's functionality. Ignore these errors.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you found a bug or have an improvement:
+
+1. Open an Issue describing the problem
+2. Submit a Pull Request with the solution
+
+## ⚖️ License
+
+MIT License - See the [LICENSE](LICENSE) file for details.
+
+## ⭐ Acknowledgments
+
+This script was developed to solve a real problem faced by Udemy students. If it was helpful to you, consider giving the repository a star!
+
+---
+**Note**: This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Udemy.
